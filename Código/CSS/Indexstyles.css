@@ -1,21 +1,37 @@
 .{
   padding: 0;
   margin: 0;
+  font: Poppins;
 }
 
-p{
-  color: #282828;
-}
 
-.datos{
-  margin: 5%;
-  padding: 5%;
-  background-color: F2F3F7;
-}
+
 
 button{
   font: Poppins;
   background-color: #002D6D;
   text-decoration-color: #FFFFFF;
   color: #FFFFFF;
+}
+
+
+.ContentForm{
+  display: grid;
+  grid-gap: 5%;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(2,1fr);
+
+  background-color: #002D6D;
+  width: 90%;
+  height: 10%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.DataLogin{
+  display: grid;
+  grid-gap: 5%;
+  grid-template-columns: repeat(1,auto);
+  grid-template-rows: repeat(2,50%);
+
 }
