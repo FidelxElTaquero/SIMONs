@@ -72,25 +72,6 @@
 }
 
 
-.ContentForm{
-  display: grid;
-  grid-gap: 5%;
-  grid-template-columns: repeat(2,5fr);
-  grid-template-row: repeat(2,500px);
-
-  background-color: #0033ff;
-}
-
-.SlideImage{
-  width: 10%;
-  height: 10%;
-}
-
-.LogoTec{
-  width: 10%;
-  height: 10%;
-}
-
 
 body {
   margin: 0px;

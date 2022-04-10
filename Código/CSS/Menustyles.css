@@ -1,0 +1,82 @@
+body{
+  background-color: #FFFFFF;
+}
+
+*{
+  font-family: Poppins;
+  margin: 0;
+  padding: 0;
+  font-size: 25pxs;
+}
+
+/*Encabezado*/
+header{
+  margin-top: 5%;
+  background-color: #FFFFFF;
+  text-align: center;
+}
+
+/*Acomodar Horizontalmente Menú*/
+header ul{
+  display: inline-flex;
+  list-style: none;
+}
+
+/*Tamaño Botones Menú & Espacio Entre ellos*/
+header ul li{
+  padding: 10px 10px 10px 10px;
+  margin-right: 50px;
+}
+
+/*Decoración Letras Menu*/
+header ul li a{
+  text-decoration: none;
+  color: #282828;
+}
+
+/*Efecto Hover Menú*/
+li:hover{
+  background-color: rgba(85, 115, 158, 0.5);
+}
+
+/*Esconder Sub Menu 1*/
+.SubMenu{
+  display: none;
+  border: 1px solid;
+  border-color: #002D6D;
+  width: auto;
+  height: auto;
+}
+
+/*Esconder Sub Menu 2*/
+.SubMenu2{
+  display: none;
+}
+
+/*Error Aquí*/
+.Menu2:hover .SubMenu2{
+  position: absolute;
+  left: 50%;
+  display: block;
+}
+
+/*Mostrar Sub Menu*/
+header ul li:hover .SubMenu{
+  display: block;
+  position: absolute;
+  margin-left: -1.3%;
+  margin-top: 0.5%;
+}
+
+/*Acomodar Verticalmente Sub Menu*/
+header ul li:hover .SubMenu ul{
+  display: block;
+  margin: 10px;
+}
+
+
+
+
+#Line{
+  border-right: 1px solid #000000;
+}
