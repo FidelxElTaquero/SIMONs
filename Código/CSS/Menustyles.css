@@ -1,17 +1,30 @@
 body{
   background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /*
+  position: relative;
+  padding-bottom: 3%;
+  min-height: 88.4vh;
+  */
 }
 
 *{
   font-family: Poppins;
-  margin: 0;
-  padding: 0;
-  font-size: 25pxs;
+  margin: 0px;
+  padding: 0px;
+  font-size: 21px;
+}
+
+/*Variables*/
+:root{
+  --color-p:#002D6D;
 }
 
 /*Encabezado*/
 header{
-  margin-top: 5%;
+  margin-top: 3%;
   background-color: #FFFFFF;
   text-align: center;
 }
@@ -22,10 +35,9 @@ header ul{
   list-style: none;
 }
 
-/*Tamaño Botones Menú & Espacio Entre ellos*/
+/*Tamaño Botones Menú*/
 header ul li{
-  padding: 10px 10px 10px 10px;
-  margin-right: 50px;
+  padding: 5px 5px 5px 5px;
 }
 
 /*Decoración Letras Menu*/
@@ -43,21 +55,23 @@ li:hover{
 .SubMenu{
   display: none;
   border: 1px solid;
-  border-color: #002D6D;
-  width: auto;
-  height: auto;
+  border-color: var(--color-p);
 }
 
-/*Esconder Sub Menu 2*/
+/*Esconder Sub Menu 2 & Propiedades*/
 .SubMenu2{
   display: none;
+  border: 1px solid;
+  border-color: #002D6D;
+  left: 100%;
+  top:-0.4%;
+  width: 100%;
 }
 
-/*Error Aquí*/
-.Menu2:hover .SubMenu2{
-  position: absolute;
-  left: 50%;
+/*Mostrar SubMenu2*/
+.MenuDos:hover .SubMenu2{
   display: block;
+  position: absolute;
 }
 
 /*Mostrar Sub Menu*/
@@ -65,18 +79,153 @@ header ul li:hover .SubMenu{
   display: block;
   position: absolute;
   margin-left: -1.3%;
-  margin-top: 0.5%;
+  margin-top: 0.3%;
 }
 
 /*Acomodar Verticalmente Sub Menu*/
 header ul li:hover .SubMenu ul{
   display: block;
-  margin: 10px;
+  margin: 0px;
 }
 
+/*Espacio estre Botones*/
+.Divider{
+  background-color: #FFFFFF;
+  height: 40px;
+  width: 1px;
+  margin: 0px 25px 0px 0px;
+}
+
+/*Divisor*/
+.DividerClose{
+  background-color: #000000;
+  height: 40px;
+  width: 1px;
+  margin: 0px 15px 0px 25px;
+}
+
+/*Pie de pagína*/
+.Pie{
+  width: 100%;
+  height: auto;
+
+  background-color:var(--color-p);
+  color: #FFFFFF;
+
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+
+  margin-top: auto;
+
+  /*
+  bottom: 0px;
+  position: absolute;
+  */
+}
+
+/*Padding Contactos*/
+.Contactos{
+  padding: 2% 1%;
+}
+
+/*Tamaño Letra Contactos*/
+#Contact{
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+/*Acomodar Redes Sociales*/
+.Redes{
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+/*Tanaño Iconos Redes Sociales*/
+.Redes i{
+  font-size: 50px;
+  text-align: right;
+}
+
+/*Decoración Texto Redes Sociales*/
+.Pie a{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+
+  align-items: center;
+  text-align:center;
+
+  font-size: 28px;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.Menu-Boton{
+  display: grid;
+  height: auto;
+  width: 8%;
+  border: 0px;
+}
+
+.Menu-Boton img,button{
+  align-items: center;
+  text-align: center;
+
+  border-radius: 10%;
+
+  font-size: 5px;
+  background-color: #FFFFFF;
+}
+
+/*Mobile Responsive Version*/
+@media Screen and (max-width:800px) {
+
+  header{
+    display: none;
+  }
+
+
+  /*Pie de Pagína*/
+  .Pie{
+    align-items: center;
+
+    width: 100%;
+    height: auto;
+
+    background-color:var(--color-p);
+    color: #FFFFFF;
+
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+
+    margin-top: auto;
+  }
+
+  /*Tanaño Iconos Redes Sociales*/
+  .Redes i{
+    font-size: 25px;
+    text-align: center;
+  }
+
+  /*Decoración Texto Redes Sociales*/
+  .Pie a{
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+
+    align-items:center;
+    text-align:center;
+
+    font-size: 16px;
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+
+  /*Tamaño Letra Contactos*/
+  #Contact{
+    font-size: 14px;
+    margin-top: 15px;
+  }
 
 
 
-#Line{
-  border-right: 1px solid #000000;
 }
