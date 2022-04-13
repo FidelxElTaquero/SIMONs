@@ -95,8 +95,8 @@ body{
 /*Login Button*/
 #LoginButton{
   position: static;
-  width: 60%;
-  height: 10%;
+  width: 100%;
+  height: 100%;
 
   background: #002D6D;
   border: 0px;
@@ -105,6 +105,25 @@ body{
   font-size: 170%;
   text-align: center;
   color: #FFFFFF;
+}
+
+a{
+  position: static;
+  width: 60%;
+  height: 10%;
+
+  background: #002D6D;
+  border: 0px;
+  border-radius: 4px;
+
+  /*font-size: 170%;*/
+  text-align: center;
+  color: #FFFFFF;
+}
+
+/*Button Hover*/
+a:hover{
+  background-color: #00204D;
 }
 
 /*Button Hover*/

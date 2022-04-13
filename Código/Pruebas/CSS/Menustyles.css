@@ -160,10 +160,10 @@ header ul li:hover .SubMenu ul{
 }
 
 .Menu-Boton{
-  display: grid;
+  display: none;
   /*display: grid;*/
   height: auto;
-  width: 1%;
+  width: 8%;
   border: 0px;
 }
 
@@ -173,12 +173,8 @@ header ul li:hover .SubMenu ul{
 
   border-radius: 10%;
 
-  font-size: 1px;
+  font-size: 5px;
   background-color: #FFFFFF;
-}
-
-#Hi{
-  font-size: 1px;
 }
 
 /*Mobile Responsive Version*/
